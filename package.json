@@ -1,0 +1,23 @@
+{
+  "name": "fer201m",
+  "version": "1.0.0",
+  "description": "Test download Node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TruongHocLapTrinh/GitPush.git"
+  },
+  "author": "LeNhatTruong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TruongHocLapTrinh/GitPush/issues"
+  },
+  "homepage": "https://github.com/TruongHocLapTrinh/GitPush#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
