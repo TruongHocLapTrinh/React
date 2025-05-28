@@ -6,8 +6,8 @@ const employees = [
   { id: 3, name: "Clara", department: "Finance", age: 19 },
   { id: 4, name: "Ann", department: "Finance", age: 22 },
   { id: 5, name: "Elisabeth", department: "HR", age: 16 },
-//   { name: "Ann", department: "Finance", age: 22 },
-//   { name: "Elisabeth", department: "HR", age: 16 }
+  //   { name: "Ann", department: "Finance", age: 22 },
+  //   { name: "Elisabeth", department: "HR", age: 16 }
 ];
 
 const tableStyle = {
@@ -147,7 +147,9 @@ const GroupedEmployees = () => {
 // Exercise 9: Teenager Check
 const TeenagerCheck = () => {
   const isTeenager = employees.some((e) => e.age >= 10 && e.age <= 20);
-  return <p style={{ margin: "10px 0" }}>Has teenager: {isTeenager.toString()}</p>;
+  return (
+    <p style={{ margin: "10px 0" }}>Has teenager: {isTeenager.toString()}</p>
+  );
 };
 
 // Exercise 10: Employee Search
@@ -286,7 +288,7 @@ const EmployeeList = () => (
       >
         Exercise 7: Sorted Employees
       </h2>
-      < SortedEmployees />
+      <SortedEmployees />
     </section>
 
     {/* Exercise 8: Grouped Employees */}

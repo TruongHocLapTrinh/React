@@ -1,4 +1,5 @@
 import "./App.css";
+import BootstrapDemo from "./components/Bootstrap";
 
 function App() {
   var array = [1, 2, 3, 4];
@@ -30,11 +31,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <h1>The Array: {array.join(", ")}</h1>
         <p>Sum of the array: {sum}</p>
         <p>Product of the array: {product}</p>
-      </header>
+      </header> */}
+
+      <BootstrapDemo />
     </div>
   );
 }
