@@ -1,14 +1,6 @@
-import { useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function BookingForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    dateService: "",
-    message: "",
-  });
-
   return (
     <div className="mx-auto" style={{ maxWidth: "800px" }}>
       <form>
@@ -19,7 +11,6 @@ function BookingForm() {
               className="form-control"
               placeholder="Your Name *"
               name="name"
-              value={formData.name}
               required
             />
           </div>
@@ -29,7 +20,6 @@ function BookingForm() {
               className="form-control"
               placeholder="Your Email *"
               name="email"
-              value={formData.email}
               required
             />
           </div>
@@ -37,7 +27,6 @@ function BookingForm() {
             <select
               className="form-select"
               name="dateService"
-              value={formData.dateService}
               required
             >
               <option value="">Select a Service *</option>
@@ -57,7 +46,6 @@ function BookingForm() {
             rows="5"
             placeholder="Please write your requests..."
             name="message"
-            value={formData.message}
           ></textarea>
         </div>
 
