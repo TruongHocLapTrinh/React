@@ -1,8 +1,9 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import img1 from '../assets/menu1.jpg';
-import img2 from '../assets/menu2.jpg';
-import img3 from '../assets/menu3.jpg';
-import img4 from '../assets/menu4.jpg';
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import img1 from "../assets/menu1.jpg";
+import img2 from "../assets/menu2.jpg";
+import img3 from "../assets/menu3.jpg";
+import img4 from "../assets/menu4.jpg";
 
 function PizzaMenu() {
   const pizzas = [
@@ -35,14 +36,14 @@ function PizzaMenu() {
       originalPrice: 18.99,
       onSale: true,
     },
-  ]
+  ];
 
   const handleBuyClick = (pizzaName, price) => {
-    alert(`Added ${pizzaName} ($${price}) to cart!`)
-  }
+    alert(`Added ${pizzaName} ($${price}) to cart!`);
+  };
 
   return (
-    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div className="row row-cols-lg-4 g-4">
       {pizzas.map((pizza) => (
         <div key={pizza.id} className="col">
           <div className="card h-100 position-relative bg-white text-dark">
@@ -55,7 +56,10 @@ function PizzaMenu() {
               </span>
             )}
             {pizza.isNew && (
-              <span className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 px-2 py-1" style={{ zIndex: 1 }}>
+              <span
+                className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 px-2 py-1"
+                style={{ zIndex: 1 }}
+              >
                 NEW
               </span>
             )}
@@ -74,15 +78,24 @@ function PizzaMenu() {
                       <span className="text-decoration-line-through text-muted me-2">
                         ${pizza.originalPrice.toFixed(2)}
                       </span>
-                      <span className="fw-bold fs-5" style={{color: 'orange'}}>${pizza.price.toFixed(2)}</span>
+                      <span
+                        className="fw-bold fs-5"
+                        style={{ color: "orange" }}
+                      >
+                        ${pizza.price.toFixed(2)}
+                      </span>
                     </div>
                   ) : (
-                    <span className="fw-bold fs-5">${pizza.price.toFixed(2)}</span>
+                    <span className="fw-bold fs-5">
+                      ${pizza.price.toFixed(2)}
+                    </span>
                   )}
                 </div>
                 <button
                   className="btn btn-dark w-100"
-                  onClick={() => handleBuyClick(pizza.name, pizza.price.toFixed(2))}
+                  onClick={() =>
+                    handleBuyClick(pizza.name, pizza.price.toFixed(2))
+                  }
                 >
                   Buy
                 </button>
@@ -92,7 +105,7 @@ function PizzaMenu() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
-export default PizzaMenu
+export default PizzaMenu;

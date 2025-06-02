@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
       <div className="container">
-        <a className="navbar-brand fw-bold fs-4" href="index">
+        <a className="navbar-brand fw-bold fs-4" href="homepage">
           Pizza House
         </a>
         <button
