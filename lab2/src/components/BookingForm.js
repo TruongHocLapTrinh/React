@@ -2,7 +2,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function BookingForm() {
   return (
-    <div className="mx-auto" style={{ maxWidth: "800px" }}>
+    <div className="mx-auto" style={{ maxWidth: "1400px" }}>
       <form>
         <div className="row mb-3">
           <div className="col-md-4 mb-3 mb-md-0">
@@ -43,13 +43,13 @@ function BookingForm() {
         <div className="mb-3">
           <textarea
             className="form-control"
-            rows="5"
+            rows="8"
             placeholder="Please write your requests..."
             name="message"
           ></textarea>
         </div>
 
-        <button type="submit" className="btn btn-warning px-4 py-2 fw-bold">
+        <button type="submit" className="btn btn-warning px-4 py-2 fw-bold" style={{float: "left"}}>
           Send Message
         </button>
       </form>

@@ -15,7 +15,7 @@ function App() {
         <h2 className="text-center mb-4" style={{color: "white"}}>Our Menu</h2>
         <PizzaMenu />
       </div>
-      <div className="container my-5">
+      <div className="container my-5" style={{paddingBottom: "20px"}}>
         <h2 className="text-center mb-4" style={{color: "white"}}>Book Your Table</h2>
         <BookingForm />
       </div>
