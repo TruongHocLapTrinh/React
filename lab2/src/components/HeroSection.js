@@ -51,45 +51,50 @@ function HeroSection() {
           <div class="carousel-item active">
             <img src={img1} class="d-block w-100" alt="Pizza 1" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h1>Neapolitan Pizza</h1>
               <p>
-                Some representative placeholder content for the first slide.
+                If you are looking for a traditional Italian pizza, the
+                Neapolian is the best option!
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img2} class="d-block w-100" alt="Pizza 2" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h1>Neapolitan Pizza</h1>
               <p>
-                Some representative placeholder content for the second slide.
+                If you are looking for a traditional Italian pizza, the
+                Neapolian is the best option!
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img3} class="d-block w-100" alt="Pizza 3" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h1>Neapolitan Pizza</h1>
               <p>
-                Some representative placeholder content for the third slide.
+                If you are looking for a traditional Italian pizza, the
+                Neapolian is the best option!
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img4} class="d-block w-100" alt="Pizza 4" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Fourth slide label</h5>
+              <h1>Neapolitan Pizza</h1>
               <p>
-                Some representative placeholder content for the third slide.
+                If you are looking for a traditional Italian pizza, the
+                Neapolian is the best option!
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={img5} class="d-block w-100" alt="Pizza 5" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Fifth slide label</h5>
+              <h1>Neapolitan Pizza</h1>
               <p>
-                Some representative placeholder content for the third slide.
+                If you are looking for a traditional Italian pizza, the
+                Neapolian is the best option!
               </p>
             </div>
           </div>
