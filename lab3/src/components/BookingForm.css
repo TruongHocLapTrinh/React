@@ -1,0 +1,43 @@
+.booking-container {
+    max-width: 1000px;
+}
+
+.booking-form {
+    background: transparent;
+}
+
+.booking-input,
+.booking-select,
+.booking-textarea {
+    background-color: white !important;
+    border: 1px solid #ddd !important;
+    padding: 12px 15px;
+    font-size: 1rem;
+}
+
+.booking-input:focus,
+.booking-select:focus,
+.booking-textarea:focus {
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25) !important;
+}
+
+.booking-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.send-btn {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: black !important;
+    font-weight: bold;
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
+.send-btn:hover {
+    background-color: #e0a800 !important;
+    border-color: #d39e00 !important;
+    color: black !important;
+}

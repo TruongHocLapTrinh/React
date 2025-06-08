@@ -1,0 +1,28 @@
+.custom-navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+
+.custom-navbar .navbar-brand {
+    color: white !important;
+}
+
+.custom-navbar .nav-link {
+    color: #ccc !important;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: white !important;
+}
+
+.search-btn {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.search-btn:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
