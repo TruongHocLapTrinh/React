@@ -9,12 +9,12 @@ import img2 from "./images/student2.png";
 import img3 from "./images/student3.png";
 
 function App() {
-  const userData = { name: "truonglnde", age: 39 };
+  const userData = { name: "truonglnde", age: 21 };
   const namesList = ["truonglnde", "test@fe.edu.vn"];
   const students = [
-    { name: "truonglnde", age: 39, avatar: img1 },
-    { name: "truonglnde", age: 40, avatar: img2 },
-    { name: "truonglnde", age: 41, avatar: img3 },
+    { name: "truonglnde", age: 21, avatar: img1 },
+    { name: "truonglnde", age: 22, avatar: img2 },
+    { name: "truonglnde", age: 23, avatar: img3 },
   ];
 
   return (

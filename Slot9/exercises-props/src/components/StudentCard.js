@@ -12,6 +12,8 @@ const StudentCard = ({ student }) => {
       <Card.Body>
         <Card.Title>{student.name}</Card.Title>
         <Card.Text>Age: {student.age}</Card.Text>
+        <Card.Text>Age: {student.age}</Card.Text>
+        <Card.Text>Age: {student.age}</Card.Text>
         <Button variant="primary">Edit</Button>
         <Button variant="primary" style={{marginLeft: '10px'}}>View</Button>
       </Card.Body>
