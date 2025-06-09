@@ -9,17 +9,17 @@ import img2 from "./images/student2.png";
 import img3 from "./images/student3.png";
 
 function App() {
-  const userData = { name: "traltb@fe.edu.vn", age: 39 };
-  const namesList = ["traltb@fe.edu.vn", "test@fe.edu.vn"];
+  const userData = { name: "truonglnde", age: 39 };
+  const namesList = ["truonglnde", "test@fe.edu.vn"];
   const students = [
-    { name: "traltb1@fe.edu.vn", age: 39, avatar: img1 },
-    { name: "traltb2@fe.edu.vn", age: 40, avatar: img2 },
-    { name: "traltb3@fe.edu.vn", age: 41, avatar: img3 },
+    { name: "truonglnde", age: 39, avatar: img1 },
+    { name: "truonglnde", age: 40, avatar: img2 },
+    { name: "truonglnde", age: 41, avatar: img3 },
   ];
 
   return (
     <>
-      <Welcome name="traltb@fe.edu.vn" />
+      <Welcome name="truonglnde" />
       <Welcome name="fptdn@fe.edu.vn" />
       <UserProfile user={userData} />
       <NameList names={namesList} />
