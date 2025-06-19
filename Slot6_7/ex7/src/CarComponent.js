@@ -1,5 +1,5 @@
 import React from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "./assets/123.jpg";
 
 const CarComponent = () => {
