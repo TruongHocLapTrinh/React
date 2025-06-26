@@ -67,7 +67,7 @@ const Quiz = () => {
     <QuizContext.Provider value={{ answerStatus, setAnswerStatus }}>
       <Container className="mt-5">
         <Card className="shadow-lg p-4">
-          <h2 className="text-center mb-4 text-primary">🧠 Quiz</h2>
+          <h2 className="text-center mb-4 text-primary"> Quiz</h2>
           <div className="d-flex justify-content-between mb-3">
             <Button variant="outline-primary" onClick={() => setShowForm(!showForm)}>
               {showForm ? '➖ Hide Form' : '➕ Add New Question'}
