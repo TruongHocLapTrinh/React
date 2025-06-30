@@ -103,12 +103,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                     {validationRules?.firstName?.errorMessage ||
                       "Please provide a valid first name."}
                   </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
-                  </Form.Control.Feedback>
                 </Form.Group>
               </Col>
 
@@ -133,12 +127,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                   >
                     {validationRules?.lastName?.errorMessage ||
                       "Please provide a valid last name."}
-                  </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
                   </Form.Control.Feedback>
                 </Form.Group>
               </Col>
@@ -165,12 +153,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                     {validationRules?.username?.errorMessage ||
                       "Please choose a username."}
                   </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
-                  </Form.Control.Feedback>
                 </Form.Group>
               </Col>
             </Row>
@@ -196,12 +178,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                     {validationRules?.city?.errorMessage ||
                       "Please provide a valid city."}
                   </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
-                  </Form.Control.Feedback>
                 </Form.Group>
               </Col>
 
@@ -225,12 +201,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                     {validationRules?.state?.errorMessage ||
                       "Please provide a valid state."}
                   </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
-                  </Form.Control.Feedback>
                 </Form.Group>
               </Col>
 
@@ -253,12 +223,6 @@ function Contact({ initialFormData, validationRules, onSubmit }) {
                   >
                     {validationRules?.zip?.errorMessage ||
                       "Please provide a valid zip."}
-                  </Form.Control.Feedback>
-                  <Form.Control.Feedback
-                    type="valid"
-                    style={{ fontSize: "1.25rem" }}
-                  >
-                    Looks good!
                   </Form.Control.Feedback>
                 </Form.Group>
               </Col>
