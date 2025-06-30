@@ -22,18 +22,18 @@ function Quiz() {
       options: ["Puff pastry", "Shortcrust pastry", "Choux pastry", "Filo pastry"],
       correctAnswer: 2,
     },
-    {
-      id: 4,
-      question: "Which spice is derived from the Crocus flower?",
-      options: ["Turmeric", "Saffron", "Paprika", "Cardamom"],
-      correctAnswer: 1,
-    },
-    {
-      id: 5,
-      question: "What is the main ingredient in hummus?",
-      options: ["Lentils", "Chickpeas", "Black beans", "Kidney beans"],
-      correctAnswer: 1,
-    },
+    // {
+    //   id: 4,
+    //   question: "Which spice is derived from the Crocus flower?",
+    //   options: ["Turmeric", "Saffron", "Paprika", "Cardamom"],
+    //   correctAnswer: 1,
+    // },
+    // {
+    //   id: 5,
+    //   question: "What is the main ingredient in hummus?",
+    //   options: ["Lentils", "Chickpeas", "Black beans", "Kidney beans"],
+    //   correctAnswer: 1,
+    // },
   ]
 
   const [currentQuestion, setCurrentQuestion] = useState(0)

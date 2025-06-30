@@ -17,6 +17,7 @@ function News() {
       description:
         '"What started as a means to get a rise out of my Grammy has snowballed into a weird family tradition," wrote Jess Lydon.',
       images: event1,
+      url: "https://www.today.com/food/people/woman-bakes-profane-pies-for-grandmother-rcna126842",
     },
     {
       id: 2,
@@ -25,18 +26,21 @@ function News() {
       description:
         "Queen of Thanksgiving Martha Stewart may not be hosting a turkey dinner this year but fret not, she will still be celebrating with literally 30 pies.",
       images: event2,
+      url: "https://www.today.com/food/news/martha-stewart-thanksgiving-not-canceled-rcna126303",
     },
     {
       id: 3,
       title: "Burger King is testing a new breakfast sandwich",
       description: "This is a win for the flatbread fans.",
       images: event3,
+      url: "https://www.today.com/food/restaurants/burger-king-breakfast-grillwich-sandwich-rcna126282",
     },
     {
       id: 4,
       title: "Popeyes permanently adds chicken wings to its menu",
       description: "And you can get 'em in five different flavors.",
       images: event4,
+      url: "https://www.today.com/food/restaurants/popeyes-chicken-wings-permanently-on-menu-rcna126368",
     },
     {
       id: 5,
@@ -44,13 +48,15 @@ function News() {
       description:
         "Tadka is a ubiquitous South Asian technique that adds a dramatic last-minute coat of flavor.",
       images: event5,
+      url: "https://www.today.com/recipes/roasted-salmon-tableside-tadka-recipe-t295258",
     },
     {
       id: 6,
-      title: "80 Christmas dinner ideas for the ultimate holiday feast",
+      title: "100 Christmas dinner ideas for the ultimate holiday feast",
       description:
         "Build the perfect Christmas menu with these delicious recipes.",
       images: event6,
+      url: "https://www.today.com/food/christmas-dinner-ideas-t273742",
     },
     {
       id: 7,
@@ -58,6 +64,7 @@ function News() {
       description:
         "Use these tips and tricks to make a juicy and amazingly delicious prime rib roast.",
       images: event7,
+      url: "https://www.today.com/recipes/holiday-prime-rib-roast-t56846",
     },
     {
       id: 8,
@@ -65,6 +72,7 @@ function News() {
       description:
         "This light, bright turkey salad is the best post-Thanksgiving lunch.",
       images: event8,
+      url: "https://www.today.com/recipes/turkey-waldorf-salad-recipe-t295169",
     },
   ];
 
@@ -81,28 +89,25 @@ function News() {
                 style={{ height: "200px", objectFit: "cover" }}
               />
               <Card.Body className="d-flex flex-column">
-                <Card.Title className="h6" style={{fontSize: 24}}>{news.title}</Card.Title>
-                <Card.Text className="flex-grow-1 small text-muted" style={{fontSize: 16}}>
+                <Card.Title className="h6" style={{ fontSize: 24 }}>
+                  {news.title}
+                </Card.Title>
+                <Card.Text
+                  className="flex-grow-1 small text-muted"
+                  style={{ fontSize: 16 }}
+                >
                   {news.description}
                 </Card.Text>
-                <Card.Subtitle
-                  className="mb-2"
-                  style={{
-                    textDecoration: "underline",
-                    textDecorationColor: "blue",
-                    color: "blue",
-                    fontSize: 16,
-                  }}
-                >
+                <Card.Link href={news.url} target="_blank" rel="noopener noreferrer" className="mb-2">
                   {news.title}
-                </Card.Subtitle>
+                </Card.Link>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
     </Container>
-  );
+  ); 
 }
 
 export default News;
