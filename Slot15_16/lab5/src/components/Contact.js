@@ -49,7 +49,7 @@ function Contact() {
   };
 
   return (
-    <Container className="py-4" style={{ maxWidth: '100%' }}>
+    <Container className="py-4" style={{ maxWidth: '1400px' }}>
       <Row className="justify-content-center">
         <Col md={12} >
           <h1 className="mb-4">Contact Us</h1>

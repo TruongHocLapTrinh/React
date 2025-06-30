@@ -69,7 +69,7 @@ function News() {
   ];
 
   return (
-    <Container className="py-4" style={{ maxWidth: "100%" }}>
+    <Container className="py-4" style={{ maxWidth: "1400px" }}>
       <h1 className="text-danger mb-4">News Category</h1>
       <Row>
         {newLists.map((news) => (
