@@ -24,10 +24,6 @@ function Home() {
             alt="Celebration Ham - Masyadong Good!"
             style={{ height: "500px", objectFit: "cover" }}
           />
-          {/* <Carousel.Caption>
-            <h3>Celebration Ham</h3>
-            <p>Masyadong Good! Delicious food for every celebration</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -36,10 +32,6 @@ function Home() {
             alt="Food Slide 2"
             style={{ height: "500px", objectFit: "cover" }}
           />
-          {/* <Carousel.Caption>
-            <h3>Fresh Ingredients</h3>
-            <p>Quality food made with the finest ingredients</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -48,10 +40,6 @@ function Home() {
             alt="Food Slide 3"
             style={{ height: "500px", objectFit: "cover" }}
           />
-          {/* <Carousel.Caption>
-            <h3>Family Traditions</h3>
-            <p>Bringing families together through great food</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
 
