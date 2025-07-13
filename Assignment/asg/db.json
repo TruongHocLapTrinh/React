@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Espresso hihiu",
+      "description": "Cà phê đậm đà với lớp crema mịn, 30ml.",
+      "price": "60.000",
+      "currentPrice": "50.000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOFHQtT8Xto2ZbZdN-Qle4TJT5bPPgMrUaQ&s",
+      "category": "Tea",
+      "brand": "Phuc Long"
+    },
+    {
+      "id": "2",
+      "name": "Matcha Latte",
+      "description": "Trà xanh sữa béo ngậy, 300ml.",
+      "price": "80.000",
+      "currentPrice": "70.000",
+      "image": "https://lypham.vn/wp-content/uploads/2024/10/cach-pha-matcha-latte-nong.jpg",
+      "category": "Tea",
+      "brand": "Highlands"
+    },
+    {
+      "id": "3",
+      "name": "Mango Smoothie",
+      "description": "Sinh tố xoài tươi mát, 400ml.",
+      "price": "90.000",
+      "currentPrice": "80.000",
+      "image": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/B6821ADB-CB37-47B2-8091-C61A43487506/Derivates/35e35439-6bf2-4840-9c46-971393239c29.jpg",
+      "category": "Juice",
+      "brand": "Highlands"
+    },
+    {
+      "id": "4",
+      "name": "Caramel Macchiato",
+      "description": "Cà phê espresso với caramel và sữa, 350ml.",
+      "price": "85.000",
+      "currentPrice": "75.000",
+      "image": "https://vietblend.vn/wp-content/uploads/2018/12/caramel-macchiato_830x550.jpg",
+      "category": "Coffee",
+      "brand": "Starbucks"
+    },
+    {
+      "id": "5",
+      "name": "Peach Tea",
+      "description": "Trà đào thơm mát, 500ml.",
+      "price": "65.000",
+      "currentPrice": "55.000",
+      "image": "https://tedboycnd-cdhwdbg6ard6f4cp.z01.azurefd.net/images/thumbs/0008229_iced-peach-tea.jpeg",
+      "category": "Tea",
+      "brand": "Highlands"
+    },
+    {
+      "id": "6",
+      "name": "Orange Juice",
+      "description": "Nước cam ép tươi, 300ml.",
+      "price": "70.000",
+      "currentPrice": "60.000",
+      "image": "https://greenletes.com/wp-content/uploads/2018/05/orange-juice-1024x1024.png",
+      "category": "Juice",
+      "brand": "Phuc Long"
+    },
+    {
+      "id": "7",
+      "name": "Cappuccino",
+      "description": "Cà phê espresso với bọt sữa, 300ml.",
+      "price": "75.000",
+      "currentPrice": "65.000",
+      "image": "https://noithatcaphe.vn/images/2022/07/15/cappuccino-cafe-2.jpg",
+      "category": "Coffee",
+      "brand": "Starbucks"
+    },
+    {
+      "id": "8",
+      "name": "Herbal Tea",
+      "description": "Trà thảo mộc thư giãn, 400ml.",
+      "price": "60.000",
+      "currentPrice": "50.000",
+      "image": "https://www.botanicalinterests.com/community/blog/wp-content/uploads/2024/08/herbs-for-tea.jpg",
+      "category": "Tea",
+      "brand": "Highlands"
+    },
+    {
+      "id": "9",
+      "name": "Strawberry Smoothie",
+      "description": "Sinh tố dâu tây với sữa chua, 400ml.",
+      "price": "95.000",
+      "currentPrice": "85.000",
+      "image": "https://veganinthefreezer.com/wp-content/uploads/2023/11/Vegan-Strawberry-Smoothie-Ready-1.jpg",
+      "category": "Juice",
+      "brand": "Phuc Long"
+    },
+    {
+      "id": "10",
+      "name": "Mocha",
+      "description": "Cà phê espresso với sô-cô-la và sữa, 350ml.",
+      "price": "80.000",
+      "currentPrice": "70.000",
+      "image": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/the_perfect_mocha_coffee_29100_16x9.jpg",
+      "category": "Coffee",
+      "brand": "Starbucks"
+    }
+  ]
+}
