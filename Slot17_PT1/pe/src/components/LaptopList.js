@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Container, Row, Col, Form } from "react-bootstrap";
+import { Card, Button, Container, Row, Col, Form, Carousel, Nav, Navbar , NavDropdown   } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import ExampleCarouselImage from './ExampleCarouselImage';
+import Footer from "./Footer";
+
+const imageList = [
+  { src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpixrLHr5NRUKT63PC7s6upvT7qnrV_oZeneOWius-PH8hfat014n8B8soYqxMv3RwOiYCVTgyFKtTem36dFZj1xr0iEmlU-SXSnriPg', caption: 'Slide 1' },
+  { src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpixrLHr5NRUKT63PC7s6upvT7qnrV_oZeneOWius-PH8hfat014n8B8soYqxMv3RwOiYCVTgyFKtTem36dFZj1xr0iEmlU-SXSnriPg', caption: 'Slide 2' },
+  { src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpixrLHr5NRUKT63PC7s6upvT7qnrV_oZeneOWius-PH8hfat014n8B8soYqxMv3RwOiYCVTgyFKtTem36dFZj1xr0iEmlU-SXSnriPg', caption: 'Slide 3' }
+];
 
 const LaptopList = () => {
   const [laptops, setLaptops] = useState([]);
@@ -26,8 +34,58 @@ const LaptopList = () => {
   };
 
   return (
+    
     <Container className="mt-4">
+      <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       <h2 className="text-center mb-4">Laptop List</h2>
+      <Carousel>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" images={imageList} />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+      
       <Form className="mb-4">
         <Form.Control
           type="text"
@@ -70,6 +128,7 @@ const LaptopList = () => {
             </Card>
           </Col>
         ))}
+        <Footer/>
       </Row>
     </Container>
   );
