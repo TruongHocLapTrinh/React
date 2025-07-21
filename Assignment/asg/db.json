@@ -20,7 +20,7 @@
       "image": "https://lypham.vn/wp-content/uploads/2024/10/cach-pha-matcha-latte-nong.jpg",
       "category": "Tea",
       "brand": "Highlands",
-      "quantity": 89
+      "quantity": 84
     },
     {
       "id": "3",
@@ -75,7 +75,7 @@
       "image": "https://noithatcaphe.vn/images/2022/07/15/cappuccino-cafe-2.jpg",
       "category": "Coffee",
       "brand": "Starbucks",
-      "quantity": 92
+      "quantity": 90
     },
     {
       "id": "8",
@@ -108,7 +108,18 @@
       "image": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/the_perfect_mocha_coffee_29100_16x9.jpg",
       "category": "Coffee",
       "brand": "Highlands",
-      "quantity": 88
+      "quantity": 85
+    },
+    {
+      "id": "779419a5-6f8b-43ce-845a-a556ec267241",
+      "name": "Espresso",
+      "description": "123123",
+      "price": "50000",
+      "currentPrice": "40000",
+      "image": "https://cafedidong.vn/wp-content/uploads/2018/09/Cookie-%C4%91%C3%A1-xay.jpg",
+      "category": "Coffee",
+      "brand": "Starbucks",
+      "quantity": 98
     }
   ]
 }

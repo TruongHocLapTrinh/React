@@ -41,7 +41,7 @@ const Checkout = () => {
                 />
                 <div>
                   <h5>{item.name}</h5>
-                  <p>{(item.currentPrice * 1000).toLocaleString('vi-VN')} VNĐ x {item.quantity}</p>
+                  <p>{(item.currentPrice).toLocaleString('vi-VN')} VNĐ x {item.quantity}</p>
                 </div>
               </Card.Body>
             </Card>
