@@ -45,7 +45,6 @@ export const updateProductAsync = (product) => {
       .put(`http://localhost:3001/products/${product.id}`, updatedProduct)
       .then((response) => {
         dispatch(updateProduct(response.data));
-        toast.success('Cập nhật đồ uống thành công!');
       })
       .catch((error) => {
         dispatch(fetchProductsFailure(error.message));
