@@ -24,7 +24,7 @@ export const fetchProducts = () => {
 
 export const addProductAsync = (product) => {
   return (dispatch) => {
-    const newProduct = { ...product, id: uuidv4() };
+    const newProduct = { ...product, id: uuidv4(), quantity: Number(product.quantity) };
     axios
       .post('http://localhost:3001/products', newProduct)
       .then((response) => {
@@ -40,8 +40,9 @@ export const addProductAsync = (product) => {
 
 export const updateProductAsync = (product) => {
   return (dispatch) => {
+    const updatedProduct = { ...product, quantity: Number(product.quantity) };
     axios
-      .put(`http://localhost:3001/products/${product.id}`, product)
+      .put(`http://localhost:3001/products/${product.id}`, updatedProduct)
       .then((response) => {
         dispatch(updateProduct(response.data));
         toast.success('Cập nhật đồ uống thành công!');

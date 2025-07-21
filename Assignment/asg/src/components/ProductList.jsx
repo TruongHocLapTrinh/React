@@ -4,11 +4,11 @@ import { fetchProducts, deleteProductAsync } from '../redux/actions/productActio
 import { Link } from 'react-router-dom';
 import { Button, Card, Container, Row, Col, Form, Spinner, Alert } from 'react-bootstrap';
 import { ToastContainer } from 'react-toastify';
-import ProductForm from './ProductForm';
+import ProductForm from '../components/ProductForm';
 
 const ProductList = () => {
   const dispatch = useDispatch();
-  const { products, loading, error } = useSelector((state) => state);
+  const { products, loading, error } = useSelector((state) => state.products);
   const [showAddModal, setShowAddModal] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState('');
   const [brandFilter, setBrandFilter] = useState('');
@@ -91,6 +91,7 @@ const ProductList = () => {
                   <span style={{ color: '#e67e22', fontWeight: 'bold' }}>{product.currentPrice} VNĐ</span>
                   <span style={{ textDecoration: 'line-through', color: '#999', marginLeft: '10px' }}>{product.price} VNĐ</span>
                 </Card.Text>
+                <Card.Text>Số lượng: {product.quantity}</Card.Text>
                 <div className="mt-2">
                   <Link to={`/product/${product.id}`} className="btn btn-outline-info btn-sm me-2">
                     Xem Chi Tiết

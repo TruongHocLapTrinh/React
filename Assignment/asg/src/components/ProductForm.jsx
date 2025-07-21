@@ -15,6 +15,7 @@ const ProductForm = ({ show, handleClose, product, isEdit }) => {
       image: '',
       category: '',
       brand: '',
+      quantity: 0,
     }
   );
   const [error, setError] = useState('');
@@ -25,7 +26,7 @@ const ProductForm = ({ show, handleClose, product, isEdit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.description || !formData.price || !formData.currentPrice) {
+    if (!formData.name || !formData.description || !formData.price || !formData.currentPrice || !formData.quantity) {
       setError('Vui lòng điền đầy đủ các trường bắt buộc!');
       return;
     }
@@ -66,7 +67,7 @@ const ProductForm = ({ show, handleClose, product, isEdit }) => {
           <Form.Group className="mb-3">
             <Form.Label>Giá gốc (VNĐ)</Form.Label>
             <Form.Control
-              type="text"
+              type="number"
               name="price"
               value={formData.price}
               onChange={handleChange}
@@ -75,9 +76,18 @@ const ProductForm = ({ show, handleClose, product, isEdit }) => {
           <Form.Group className="mb-3">
             <Form.Label>Giá hiện tại (VNĐ)</Form.Label>
             <Form.Control
-              type="text"
+              type="number"
               name="currentPrice"
               value={formData.currentPrice}
+              onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Số lượng</Form.Label>
+            <Form.Control
+              type="number"
+              name="quantity"
+              value={formData.quantity}
               onChange={handleChange}
             />
           </Form.Group>
@@ -117,8 +127,6 @@ const ProductForm = ({ show, handleClose, product, isEdit }) => {
   );
 };
 
-export default ProductForm;
-
 ProductForm.propTypes = {
   show: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
@@ -130,6 +138,9 @@ ProductForm.propTypes = {
     image: PropTypes.string,
     category: PropTypes.string,
     brand: PropTypes.string,
+    quantity: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
   isEdit: PropTypes.bool,
 };
+
+export default ProductForm;
